@@ -36,7 +36,7 @@ class Player(sprite.Sprite):
         if not self.onGround:
             self.yvel += GRAVITY
 
-        self.onGround = False;  # Мы не знаем, когда мы на земле((
+        self.onGround = False  # Мы не знаем, когда мы на земле((
 
         self.rect.y += self.yvel
         self.collide(0, self.yvel, platforms)
